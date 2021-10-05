@@ -23,7 +23,7 @@ p,
 a {
     color: white;
     text-decoration: none;
-    font-weight: 800
+    font-weight: 700
 }
 
 p {
@@ -107,7 +107,29 @@ main {
     height: 20%;
 }
 
+.nav {
+    display: flex;
+    flex-direction: column;
+}
 
+
+.nav-item {
+    margin-bottom: 15px;
+    opacity: 0.4
+}
+.nav-item:first-child {
+    border-left: 3px solid #adff2f;
+    opacity: 1
+}
+
+.nav-item img {
+    height: 27px;
+    vertical-align: middle;
+}
+
+.nav-item:hover {
+    opacity: 1;
+}
 
 
 
@@ -145,7 +167,6 @@ main {
 
 /* Cover Conteiner */
 .cover-conteiner {
-    border: 1px solid blue; /* TODO: delete*/
     height: 100%;
     overflow: auto;
 }
@@ -215,6 +236,19 @@ footer {
     }
 
     .brand-l {
+        display: none;
+    }
+
+    .nav {
+        align-items: center;
+    }
+
+    .nav-item:first-child {
+        border: none
+    }
+
+ 
+    .nav-item span {
         display: none;
     }
 }
