@@ -72,7 +72,7 @@ main {
 .navigation-bar {
     background-color: #000000;
     height: 100%;
-    width: 200px;
+    width: 250px;
     flex-shrink: 0;
  }
 
@@ -85,9 +85,27 @@ main {
 }
 
 .navigation-item {
-    border: 1px solid white /* TODO: delete */;
 }
 
+.brand-l {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+}
+.brand-l img {
+    height: 65%;
+}
+
+
+.brand-s {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    display: none
+}
+.brand-s img {
+    height: 20%;
+}
 
 
 
@@ -104,7 +122,7 @@ main {
 .call-conteiner {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 250px);
     height: 8%;
     display: flex;
     justify-content: flex-end;
@@ -173,6 +191,30 @@ footer {
 
 /* Extra Small */
 @media screen and (max-width: 600px) {
-    .navigation-bar { width: 45px}
 
+    /* Utilities */
+    .px-20 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    /* Navigation */
+    .navigation-bar { width: 50px}
+
+    .call-conteiner {
+        width: calc(100vw - 50px)
+    }
+
+    .brand-s {
+        display: flex;
+        justify-content: center;
+    }
+    .brand-s img {
+        height: 80%;
+    }
+
+    .brand-l {
+        display: none;
+    }
 }
