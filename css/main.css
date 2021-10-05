@@ -9,10 +9,10 @@
 
 
 /* Utilities */
-body {
+/* body {
     background-color: red
 }
-
+ */
 h1, 
 h2, 
 h3, 
@@ -25,5 +25,25 @@ a {
     font-weight: 800
 }
 
+.main-conteiner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Main */
+main {
+    background-color: red;
+    flex-grow: 1;
+}
+
+/* Footer */
+footer {
+    background-color: blue;
+    height: 80px;
+}
 
 
