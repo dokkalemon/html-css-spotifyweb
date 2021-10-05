@@ -223,13 +223,14 @@ main {
 
 /* Call to Action */
 .call-conteiner {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: calc(100vw - 250px);
     height: 8%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;;
+    align-items: center;
+    z-index: 999;
 }
 
 .call p {
@@ -251,6 +252,139 @@ main {
     height: 100%;
     overflow: auto;
 }
+
+.category {
+    margin-top: 85px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-list {
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.category-item {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.underline {
+    height: 3px;
+    width: 40%;
+    background-color: #adff2f;
+
+}
+
+.evidence {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline {
+    margin-top: 5px;
+}
+
+.main-cover {
+    margin-top: 20px;
+}
+
+/* Cover */
+
+.cover-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cover-grid li {
+    list-style: none
+}
+
+.cover-item {
+    width: calc(100% / 6.5);
+    margin-right: 20px
+}
+
+.cover-image {
+    position: relative;
+    cursor: pointer;
+}
+
+.cover-image i {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 300%;
+    display: none;
+}
+
+.cover-image img {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(100%)
+}
+
+.cover-image:hover img {
+    filter: brightness(50%)
+}
+
+.cover-image:hover i {
+    display: block;
+}
+
+.cover-title h3 {
+    text-align: center;
+    cursor:pointer;
+}
+
+.cover-subtitle h5 {
+    color: rgba(255,255,255, 0.5);
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer;
+}
+
+.second-row .cover-grid {
+    justify-content: flex-start
+}
+
+.third-row .cover-grid {
+    justify-content: flex-start
+}
+
+.second-row p {
+    font-weight: 500;
+    line-height: 50px;
+    color: #6f7277
+}
+
+
+.third-row p {
+    font-weight: 500;
+    line-height: 50px;
+    color: #6f7277
+}
+
+.third-row .cover-grid .cover-item .cover-image {
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 
 /* Footer */
 footer {
