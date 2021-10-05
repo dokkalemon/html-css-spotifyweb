@@ -26,6 +26,11 @@ a {
     font-weight: 800
 }
 
+p {
+    font-weight: 500; 
+    font-size: 14px;
+}
+
 .main-conteiner {
     height: 100vh;
     display: flex;
@@ -45,6 +50,15 @@ a {
 } 
 
 
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 
 /* Main */
@@ -56,7 +70,7 @@ main {
 
 /* Navigation Bar */
 .navigation-bar {
-    background-color: green;
+    background-color: #000000;
     height: 100%;
     width: 200px;
     flex-shrink: 0;
@@ -82,16 +96,34 @@ main {
 
 /* Main Content */
 .main-content {
-    background-color: yellow /* TODO: delete */;
+    background-color: #141922;
     height: calc(100vh - 80px)
 }
 
 /* Call to Action */
-.call {
+.call-conteiner {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    width: 100%;
+    width: calc(100vw - 200px);
+    height: 8%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;;
 }
+
+.call p {
+    border: 1px solid white;
+    padding: 10px 35px;
+    border-radius: 20px;
+}
+
+
+.call:hover {
+    transform: scale(1.1)
+}
+
+
+
 
 /* Cover Conteiner */
 .cover-conteiner {
@@ -102,7 +134,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: blue /* TODO: delete */;
+    background-color: #282828 /* TODO: delete */;
     height: 80px;
     flex-shrink: 0;
 }
