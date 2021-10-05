@@ -411,7 +411,22 @@ footer {
     margin-left: 20px;
 }
 
+/* Volume Section */
+.third-item {
 
+    width: 13%;
+    justify-content: flex-end
+
+}
+.third-item i {
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.volume .progressive-bar-song {
+    width: 50%;
+}
 
 
 
