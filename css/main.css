@@ -38,6 +38,7 @@ a {
 
 
 
+
 /* Main */
 main {
     background-color: red;
@@ -73,15 +74,42 @@ main {
 /* Main Content */
 .main-content {
     background-color: yellow;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Call to Action */
+.call {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: fixed;
+    width: 100%;
+}
+
+
+
+
+/* Cover Conteiner */
+.cover-conteiner {
+    border: 1px solid blue;
+    height: 20vh;
+    overflow: auto;
     
 }
 
+
+.debug {
+    height: 2000px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: black
+}
 
 
 /* Footer */
 footer {
     background-color: blue;
     height: 80px;
+    flex-shrink: 0;
 }
 
 
