@@ -83,8 +83,7 @@ main {
 /* Main Content */
 .main-content {
     background-color: yellow /* TODO: delete */;
-    display:flex;
-    flex-direction: column;
+    height: calc(100vh - 80px)
 }
 
 /* Call to Action */
@@ -94,20 +93,12 @@ main {
     width: 100%;
 }
 
-
-
-
 /* Cover Conteiner */
 .cover-conteiner {
     border: 1px solid blue; /* TODO: delete*/
-    
+    height: 100%;
+    overflow: auto;
 }
-
-
-
-
-
-
 
 /* Footer */
 footer {
