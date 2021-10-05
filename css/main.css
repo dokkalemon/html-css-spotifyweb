@@ -13,6 +13,7 @@
     background-color: red
 }
  */
+
 h1, 
 h2, 
 h3, 
@@ -36,12 +37,19 @@ a {
 }
 
 
+.debug {
+    height: 2000px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: black
+} 
+
 
 
 
 /* Main */
 main {
-    background-color: red;
+    background-color: red /* TODO: delete */;
     display: flex;
 }
 
@@ -59,10 +67,11 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    list-style: none;
 }
 
 .navigation-item {
-    border: 1px solid white;
+    border: 1px solid white /* TODO: delete */;
 }
 
 
@@ -73,14 +82,14 @@ main {
 
 /* Main Content */
 .main-content {
-    background-color: yellow;
+    background-color: yellow /* TODO: delete */;
     display:flex;
     flex-direction: column;
 }
 
 /* Call to Action */
 .call {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
 }
@@ -90,26 +99,39 @@ main {
 
 /* Cover Conteiner */
 .cover-conteiner {
-    border: 1px solid blue;
-    height: 20vh;
-    overflow: auto;
+    border: 1px solid blue; /* TODO: delete*/
     
 }
 
 
-.debug {
-    height: 2000px;
-    width: 200px;
-    margin: 0 auto;
-    background-color: black
-}
+
+
+
 
 
 /* Footer */
 footer {
-    background-color: blue;
+    background-color: blue /* TODO: delete */;
     height: 80px;
     flex-shrink: 0;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+    
+}
+
+.footer-item {
+    border: 1px solid white /* TODO: delete*/;
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
