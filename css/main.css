@@ -76,7 +76,6 @@ p {
 
 /* Main */
 main {
-    background-color: red /* TODO: delete */;
     display: flex;
 }
 
@@ -283,9 +282,11 @@ main {
     text-align: center;;
 }
 
+
+
 .underline {
     height: 3px;
-    width: 40%;
+    width: 20%;
     background-color: #adff2f;
 
 }
@@ -307,11 +308,14 @@ main {
 
 /* Cover */
 
+
+
 .cover-grid {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+   
 }
 
 .cover-grid {
@@ -403,10 +407,14 @@ main {
 }
 
 
+.main-cover {
+    margin-bottom: 60px;
+}
+
 
 /* Footer */
 footer {
-    background-color: #282828 /* TODO: delete */;
+    background-color: #282828;
     height: 80px;
     flex-shrink: 0;
 }
@@ -590,8 +598,11 @@ footer {
 
     .cover-grid {
         flex-wrap: wrap;
-        justify-content: flex-start
+        justify-content: flex-start;
+        
     }
+
+
 
     .cover-item {
         width: calc(100% / 4.5)
@@ -623,6 +634,8 @@ footer {
     .cover-title h3 {
         font-size: 15px;
     }
+
+  
 }
 
 /* Extra Small */
@@ -695,6 +708,7 @@ footer {
     .cover-item {
         width: calc(100% / 2.3)
     }
+
 
 
 }
