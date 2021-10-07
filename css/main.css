@@ -77,6 +77,7 @@ p {
 /* Main */
 main {
     display: flex;
+    height: calc(100% - 80px)
 }
 
 
@@ -96,8 +97,8 @@ main {
     list-style: none;
 }
 
-.navigation-item {
-}
+
+
 
 .brand-l {
     display: flex;
@@ -149,7 +150,7 @@ main {
 }
 
 .playlist-item {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .covered {
@@ -172,10 +173,18 @@ main {
     margin-left: 10px;
 }
 
+.navigation-link {
+    margin-top: 10px;
+    flex-grow: 1;
+
+}
+
+
 
 
 /* Account */
 .account-conteiner {
+    flex-shrink: 0;
     display:flex;
     flex-direction: column;
 }
@@ -416,6 +425,7 @@ footer {
     background-color: #282828;
     height: 80px;
     flex-shrink: 0;
+    z-index: 9;
 }
 
 .footer-list {
@@ -481,7 +491,8 @@ footer {
 .controls {
     width: 70%;
     flex-direction: column;
-    justify-content: center;;
+    justify-content: center;
+   
 }
 
 
@@ -572,8 +583,7 @@ footer {
 
 /* Volume Section */
 .third-item {
-
-    width: 13%;
+    width: 20%;
     justify-content: flex-end
 
 }
